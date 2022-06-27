@@ -25,6 +25,9 @@
 		<!-- Bootstrap CSS -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+		<!-- LightSlider -->
+		<link rel='stylesheet' href='https://sachinchoolur.github.io/lightslider/dist/css/lightslider.css'>
+
 		<!-- Custom CSS -->
 		<link href="assets/css/style.css" rel="stylesheet">
 	</head>
@@ -44,49 +47,73 @@
 			</ul>
 
 			<div class="col-md-3 text-end">
-				<a class="text-muted mx-1" target="_blank" href="https://twitter.com/fckwarship"><i class="fab fa-twitter"></i></a>
-				<a class="text-muted mx-1" target="_blank" href=""><i class="fab fa-instagram"></i></a>
-				<a class="text-muted mx-1" target="_blank" href=""><i class="fab fa-tiktok"></i></a>
-				<a class="text-muted mx-1" target="_blank" href=""><i class="fab fa-facebook"></i></a>
-				<a class="text-muted mx-1" target="_blank" href=""><i class="fab fa-telegram"></i></a>
+				<a class="btn btn-sm text-primary mx-1 px-0" target="_blank" href="https://twitter.com/fckwarship"><i class="fab fa-twitter"></i></a>
+				<button class="btn btn-sm mx-1 px-0" disabled><i class="fab fa-discord"></i></button>
+				<button class="btn btn-sm mx-1 px-0" disabled><i class="fab fa-telegram"></i></button>
+				<button class="btn btn-sm mx-1 px-0" disabled><i class="fab fa-instagram"></i></button>
 			</div>
 		</header>
 
 
 		<!-- Main -->
 		<main>
-			<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-light">
-				<div class="container-fluid">
+
+			<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+				<div class="me-md-3 p-4 pt-md-5 px-md-5 overflow-hidden text-dark" style="background-color: rgb(230, 195, 134);">
 					<h2>Introduction</h2>
 					<p class="col-md-8">
 						Over the last year, Ukrainians have been at a loss as to whether Russia would attack their territory. On February 24, Ukrainians woke up to the news that a full-scale war had begun. It was then that it became clear that the past was something that was inaccessible, and the time had come when citizens had to unite. And so began the story of one stamp that quickly went around the world and became coveted by many thinking people.
 					</p>
 					<button class="btn btn-outline-dark" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Continue reading</button>
 				</div>
-			</div>
 
-			<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-				<div class="me-md-3 p-4 pt-md-5 px-md-5 text-white overflow-hidden" style="background-color: rgb(94, 152, 136);">
-					<h2>Read me</h2>
-					<p>
-						This is my first NFT and I am so exited to share it with you. <br>
-						I decided to reward a random owner of my art on Solana with the original art piece. In addition, she or he shall recieve the NFT from my collection on OpenSea with all the benefits. Nevertheless, each owner of Magic Mountain NFT on Solana gets the access to the creative process. <br>
-						<br>
-						<b>
-							To be crystal clear, I want my future works to fully belong to thier owners.<br>
-							I want you to decide whether I should ship it to you or burn it to the ground.
-						</b>
+				<div class="me-md-3 p-4 pt-md-5 px-md-5 overflow-hidden" style="background-color: rgb(85, 129, 155);">
+					<h2>Summary</h2>
+					<p class="fw-normal my-1"><b>Supply:</b> 600</p>
+					<p class="fw-normal my-1"><b>Price:</b> 3 SOL</p>
+					<p class="fw-normal my-1"><b>Shipping:</b> Worldwide (russia and belarus excluded)</p>
+					<p class="fw-normal my-1"><b>Profit:</b> 100% of profit is deligated to help Ukraine.</p>
+					<p class="fw-normal my-1"><b>Royalty:</b> All royalty goes dirrectly to Ukrainian army.</p>
+					<p class="fw-normal my-1">
+						<b>Bonus:</b>
+						<div>Each minted NFT grants ownership to the respective physical post stamp.</div>
+						<div>Each stamp is authentic and certified.</div>
 					</p>
 				</div>
+			</div>
 
-				<div class="me-md-3 p-4 pt-md-5 px-md-5 overflow-hidden">
-					<h2>Summary</h2>
-					<p class="fw-normal my-1"><b>Artist:</b> Olivia Moore</p>
-					<p class="fw-normal my-1"><b>Supply:</b> 1000</p>
-					<p class="fw-normal my-1"><b>Price:</b> 0.1 SOL</p>
-					<p class="fw-normal my-1">Each minted NFT grants access to the creative process.</p>
-					<p class="fw-normal my-1">Access will be granted on or before March, 1st</p>
-					<p class="fw-normal my-1">Random owner will get or burn the original painting.</p>
+			<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-dark text-white">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xl-4 col-md-6 col-sm-12">
+							<ul class="cS-hidden" id="lightSlider">
+								<li data-thumb="assets/images/card_2_f_512.png"><img class="img-fluid" src="assets/images/card_2_f_512.png" id="card_2_f"></li>
+								<li data-thumb="assets/images/card_2_w_512.png"><img class="img-fluid" src="assets/images/card_2_w_512.png" id="card_2_w"></li>
+								<li data-thumb="assets/images/envelope_2_f_512.png"><img class="img-fluid" src="assets/images/envelope_2_f_512.png" id="envelope_2_f"></li>
+								<li data-thumb="assets/images/envelope_2_w_512.png"><img class="img-fluid" src="assets/images/envelope_2_w_512.png" id="envelope_2_w"></li>
+								<li data-thumb="assets/images/envelope_1_f_512.png"><img class="img-fluid" src="assets/images/envelope_1_f_512.png" id="envelope_1_f"></li>
+								<li data-thumb="assets/images/envelope_1_w_512.png"><img class="img-fluid" src="assets/images/envelope_1_w_512.png" id="envelope_1_w"></li>
+								<li data-thumb="assets/images/pack_1_f_512.png"><img class="img-fluid" src="assets/images/pack_1_f_512.png" id="pack_1_f"></li>
+								<li data-thumb="assets/images/pack_1_w_512.png"><img class="img-fluid" src="assets/images/pack_1_w_512.png" id="pack_1_w"></li>
+								<li data-thumb="assets/images/pack_2_f_512.png"><img class="img-fluid" src="assets/images/pack_2_f_512.png" id="pack_2_f"></li>
+								<li data-thumb="assets/images/pack_1_w_512.png"><img class="img-fluid" src="assets/images/pack_1_w_512.png" id="pack_1_w"></li>
+							</ul>
+						</div>
+
+						<div class="col">
+							<div class="mb-5 mb-lg-0 text-center text-lg-start text-light">
+								<h4 class="display-6 lh-1 mb-3" id="StampTitleID">Russian Warship Go F..k Yourself</h4>
+								<p class="fw-normal mb-2" id="StampDescriptionID">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec urna in elit vehicula laoreet vel eget arcu. Aenean feugiat justo ut ex vehicula, sed gravida diam mattis. Donec vel purus magna. Nulla ac cursus diam. Phasellus commodo dictum ipsum. Aliquam erat volutpat. Duis eget aliquam sem. Fusce facilisis bibendum lectus quis commodo. Ut dapibus vitae felis sit amet tempus. Duis mollis tristique metus, rhoncus vehicula elit facilisis quis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+								<p class="fw-normal mb-2"><b>Type:</b> <span id="StampTypeID">CARD</span></p>
+								<p class="fw-normal mb-2"><b>Series:</b> <span id="StampSeriesID">F</span></p>
+								<p class="fw-normal mb-2"><b>Supply:</b> <span id="StampSupplyID">0</span></p>
+								<p class="fw-normal mb-5"><b>Authenticity:</b> CERTIFIED</p>
+								<div id="root"></div>
+							</div>
+
+							<a class="btn btn-outline-light" href="mint.html">Mint</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</main>
@@ -167,11 +194,6 @@
 
 
 
-
-
-
-
-
 		<!-- Footer -->
 		<footer class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-4 border-top bg-light mt-auto">
 			<div class="container-fluid mx-3">
@@ -181,7 +203,7 @@
 					</p>
 					<div>Copyright &copy; 2022</div>
 					<div>Russian Warship Go F... Yourself</div>
-					<div>New to stamps? Read more at the official <a style="color: inherit;" href="read.html"><b>UkrPoshta</b></a> website.</div>
+					<div>New to stamps? Read more at the official <a style="color: inherit;" href="https://www.ukrposhta.ua/en/"><b>UkrPoshta</b></a> website.</div>
 				</small>
 			</div>
 		</footer>
@@ -193,6 +215,143 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 		<!-- Fontawesome JS -->
 		<script src="https://kit.fontawesome.com/f893c5d79b.js"></script>
+		<!-- jQuery JS -->
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<!-- LightSlider JS -->
+		<script src='https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var slider = $('#lightSlider').lightSlider({
+					gallery: true,
+					item: 1,
+					loop: true,
+					slideMargin: 0,
+					thumbItem: 5,
+					onSliderLoad: function(slider) {
+						$('#lightSlider').removeClass('cS-hidden')
+					},
+					onAfterSlide: function (el) {
+						var id = $(el).find('.active img').attr('id')
+
+						// Stamp 1 W
+						if (id=='stamp_1_w') {
+							$('#StampTitleID').text('Russian Warship Go F..k Yourself')
+							// $('#StampDescriptionID').text(id)
+							$('#StampTypeID').text('STAMP')
+							$('#StampSeriesID').text('W')
+							$('#StampSupplyID').text('28')
+
+						// Stamp 1 F
+						} else if (id=='stamp_1_f') {
+							$('#StampTitleID').text('Russian Warship Go F..k Yourself')
+							// $('#StampDescriptionID').text(id)
+							$('#StampTypeID').text('STAMP')
+							$('#StampSeriesID').text('F')
+							$('#StampSupplyID').text('28')
+
+						// Pack 1 W
+						} else if (id=='pack_1_w') {
+							$('#StampTitleID').text('Russian Warship Go F..k Yourself')
+							// $('#StampDescriptionID').text(id)
+							$('#StampTypeID').text('PACK (6 STAMPS)')
+							$('#StampSeriesID').text('W')
+							$('#StampSupplyID').text('1')
+
+						// Pack 1 F
+						} else if (id=='pack_1_f') {
+							$('#StampTitleID').text('Russian Warship Go F..k Yourself')
+							// $('#StampDescriptionID').text(id)
+							$('#StampTypeID').text('PACK (6 STAMPS)')
+							$('#StampSeriesID').text('F')
+							$('#StampSupplyID').text('1')
+
+						// Envelope 1 W
+						} else if (id=='envelope_1_w') {
+							$('#StampTitleID').text('Russian Warship Go F..k Yourself')
+							// $('#StampDescriptionID').text(id)
+							$('#StampTypeID').text('ENVELOPE (WITH CANCELED STAMP)')
+							$('#StampSeriesID').text('W')
+							$('#StampSupplyID').text('1')
+
+						// Envelope 1 F
+						} else if (id=='envelope_1_f') {
+							$('#StampTitleID').text('Russian Warship Go F..k Yourself')
+							// $('#StampDescriptionID').text(id)
+							$('#StampTypeID').text('ENVELOPE (WITH CANCELED STAMP)')
+							$('#StampSeriesID').text('F')
+							$('#StampSupplyID').text('1')
+
+						// Stamp 2 W
+						} else if (id=='stamp_2_w') {
+							$('#StampTitleID').text('Russian Warship DONE')
+							// $('#StampDescriptionID').text(id)
+							$('#StampTypeID').text('STAMP')
+							$('#StampSeriesID').text('W')
+							$('#StampSupplyID').text('266')
+
+						// Stamp 2 F
+						} else if (id=='stamp_2_f') {
+							$('#StampTitleID').text('Russian Warship DONE')
+							// $('#StampDescriptionID').text(id)
+							$('#StampTypeID').text('STAMP')
+							$('#StampSeriesID').text('F')
+							$('#StampSupplyID').text('266')
+
+						// Pack 2 W
+						} else if (id=='pack_2_w') {
+							$('#StampTitleID').text('Russian Warship DONE')
+							// $('#StampDescriptionID').text(id)
+							$('#StampTypeID').text('PACK (6 STAMPS)')
+							$('#StampSeriesID').text('W')
+							$('#StampSupplyID').text('2')
+
+						// Pack 2 F
+						} else if (id=='pack_2_f') {
+							$('#StampTitleID').text('Russian Warship DONE')
+							// $('#StampDescriptionID').text(id)
+							$('#StampTypeID').text('PACK (6 STAMPS)')
+							$('#StampSeriesID').text('F')
+							$('#StampSupplyID').text('2')
+
+						// Envelope 2 W
+						} else if (id=='envelope_2_w') {
+							$('#StampTitleID').text('Russian Warship DONE')
+							// $('#StampDescriptionID').text(id)
+							$('#StampTypeID').text('ENVELOPE (WITH CANCELED STAMP)')
+							$('#StampSeriesID').text('W')
+							$('#StampSupplyID').text('2')
+
+						// Envelope 2 F
+						} else if (id=='envelope_2_f') {
+							$('#StampTitleID').text('Russian Warship DONE')
+							// $('#StampDescriptionID').text(id)
+							$('#StampTypeID').text('ENVELOPE (WITH CANCELED STAMP)')
+							$('#StampSeriesID').text('F')
+							$('#StampSupplyID').text('2')
+
+						// Card 2 W
+						} else if (id=='card_2_w') {
+							$('#StampTitleID').text('Russian Warship DONE')
+							// $('#StampDescriptionID').text(id)
+							$('#StampTypeID').text('CARD (WITH CANCELED STAMP)')
+							$('#StampSeriesID').text('W')
+							$('#StampSupplyID').text('2')
+
+						// Card 2 F
+						} else if (id=='card_2_f') {
+							$('#StampTitleID').text('Russian Warship DONE')
+							// $('#StampDescriptionID').text(id)
+							$('#StampTypeID').text('CARD (WITH CANCELED STAMP)')
+							$('#StampSeriesID').text('F')
+							$('#StampSupplyID').text('2')
+						}
+					},
+
+				})
+
+			})
+		</script>
+
 	</body>
 </html>
 
